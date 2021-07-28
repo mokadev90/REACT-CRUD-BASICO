@@ -19,6 +19,8 @@ export const helpHttp = () => {
       controller.abort();
     }, 3000);
 
+    console.log(options);
+
     return fetch(endpoint, options)
       .then((res) =>
         res.ok
