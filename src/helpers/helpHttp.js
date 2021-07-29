@@ -9,7 +9,7 @@ export const helpHttp = () => {
 
     options.method = options.method || "GET";
     options.headers = options.headers
-      ? { ...defaultHeader, ...options }
+      ? { ...defaultHeader, ...options.headers }
       : defaultHeader;
 
     options.body = JSON.stringify(options.body) || false;
